@@ -39,7 +39,16 @@ Extract the BootMapper Client zip file.
 Extract the ps2avrGB_firmware zip file.
 
 #### Firmware files
-
+| File                    | Purpose                    |
+|-------------------------|----------------------------|
+| ps2avrGB_NKRO.hex       | MechKeys keyboard firmware |
+| ps2avrGB_split_NKRO.hex | Unused                     |
+| keymap/                 | Directory of keymaps       |
+| keymap_gb_B8000.hex     | Unused                     |
+| keymap_gb_EN_B87(EX)_mini(EX).hex | Base keymap for TKL, ALU84 |
+| keymap_gb_EN_face_thumb(R)(X2).hex | Base keymap for 60% |
+| keymap_gb_pad.hex        | Base keymap for MechPad | 
+| dualaction/              | Unused |
 
  
 When unzipping 4 hex files appear.
