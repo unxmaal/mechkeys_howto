@@ -54,7 +54,7 @@ Extract the ps2avrGB_firmware zip file.
 ## Mapping Keys
 1. Start the BootMapper Client
 1. Connect the board
-1. Select “Key Mapper” tab
+1. Click the “Key Mapper” tab
 1. Click "Download", which will copy the existing keymap from the board to the Boot Mapper Client
 1. For each key that you wish to change:
   2. Click "Toggle Bootmapper"
@@ -66,45 +66,23 @@ Extract the ps2avrGB_firmware zip file.
 3. Click Upload to transfer the new keymap to your keyboard
 
 
-2-1) Click the button labeled  "load keymap_part.hex or .json" and load basic Key mapping file included in the firmware.
+## Setting RGB LEDs
+1. Start the BootMapper Client
+1. Connect the board
+2. Click the "Options" tab
+1. Click "Connect"
+  1. Note: the LEDs will not turn on until after you click "Disconnect"
+1. Modify LED settings
 
-2-2) Select “upload” button, and then key map will be loaded after bootloader starts.
-If you choose “reboot after uploading”, automatically it will enable the keyboard. If not, stay in the state of bootloader.
-If you want to enable the keyboard manually, just select “Options>set keyboard” button
-
-2-3) If you want to change key settings, click “toggle bootmapper” button.
-
-2-4) If you press a key, a red light appear on matrix.
-
-2-5) Just select the key code you want.
-
-2-6) When you change all the keys, select “upload” button to upload settings.
-
-
-3) When you want to change the settings for only several keys from key-mapped keyboard.
-
-3-1) Select “download” button, so download key-map. After that you will see the col/row data table.
-
-3-2) Start bootMapper by clicking “toggle bootmapper”.
-
-3-3) After pressing a keyboard you want to change, select the col/row and keycode value.
-
-3-4) By selection “toggle bootmapper”, stop bootMapper.
-
-
-4. How to set RGB LED
-Just select “Options > connect”
-
-
-
-
-
-- When you click “connect”, keyboard switch LEDs will be off.
-- When you click "disconnect", keyboard switch LEDs will be on and setting mode will be disconnected.
-- Num of LEDs : The amount of RGB LED in PCB 
-- LED mode selection and color setting : Choose LED mode and set Color.(you can use hexa code to define color you want. ex, FF3300)
-
-- Brightness : Can set the brightness of RGB LED by using slider. The brighter RGB LED, the darker switch LED.
+| Setting | Effect |
+|---------|--------|
+| Num of RGB LEDs | The number of RGB LEDs on the PCB |
+| RGB LED mode selection and color setting | Choose between "off", "Rainbow", or a solid color. | 
+|                                          | Explicit Rainbow colors may be defined using hexadecimal codes |
+| RGB LED Brightness | Controls RGB LED. Note that the brighter the RGB LED, the dimmer the switch LEDs will be |
+| RGB LED key event selection and color setting | |
+| Full LED Mode | |
+| Lock LED Settings | Specify lighting for "Num Lock", "Caps Lock", and "Scroll Lock" |
 
 
 
