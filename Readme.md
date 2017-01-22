@@ -23,8 +23,8 @@ In most cases, you will not need to upload new firmware to the board.
 Download both the client and the firmware.
 
 ### BootMapper Client
-Windows BootMapper Client: https://www.dropbox.com/s/3bn9flirkb49ahz/BootMapperClient.zip?dl=0
-Mac OSX BootMapper Client: https://www.dropbox.com/s/wselndg19ofby85/BootMapperClient.mac.zip?dl=0
+* Windows BootMapper Client: https://www.dropbox.com/s/3bn9flirkb49ahz/BootMapperClient.zip?dl=0
+* Mac OSX BootMapper Client: https://www.dropbox.com/s/wselndg19ofby85/BootMapperClient.mac.zip?dl=0
 
 ### Firmware
 PS2avrGB: https://github.com/showjean/ps2avrU/releases
