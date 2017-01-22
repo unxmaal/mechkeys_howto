@@ -3,7 +3,7 @@
 
 Every MechKeys.ca board ships pre-programmed and ready to use.
 
-To enhance the original layout, download the pre-programmed layout, modify it, and upload it to the board.
+To enhance the original layout on the board, download the pre-programmed layout from the board, modify it in the Boot Mapper Client, and upload it to the board.
 
 In most cases, you will not need to upload new firmware to the board.
 
@@ -50,62 +50,21 @@ Extract the ps2avrGB_firmware zip file.
 | keymap_gb_pad.hex        | Base keymap for MechPad | 
 | dualaction/              | Unused |
 
- 
-When unzipping 4 hex files appear.
-- ps2avrGB_NKRO.hex : Firmware
-- keymap_gb_B87(EX).hex : Key map for B.87, B.87 EX, B.mini, B.mini EX
-- keymap_gb_face_thumb.hex : Key map for B.face, B.thumb
-- keymap_gb_pad.hex : Key map for B.pad
 
+## Mapping Keys
+1. Start the BootMapper Client
+1. Connect the board
+1. Select “Key Mapper” tab
+1. Click "Download", which will copy the existing keymap from the board to the Boot Mapper Client
+1. For each key that you wish to change:
+  2. Click "Toggle Bootmapper"
+  1. On the keyboard diagram at the bottom of the Boot Mapper Client, click the key to change
+  2. Click the key that has the action you wish the first key to have
+  3. Click "Toggle Bootmapper"
+1. Repeat for all keys and all layers
+2. Click "Save keymap_part.hex" to save your keymap file to disk
+3. Click Upload to transfer the new keymap to your keyboard
 
-
-3. How to upload firmware
-
-Supporting both for Window and Mac OS
-Available only while connected by USB
-First of all you must upload firmware to enable all the functions properly.(When MCU was attached to the PCB by soldering, bootloader was automatically installed.)
-
-Start bootMapperClient.exe
-
-2) Select “Options > firm up(select hex file)” and select firmware file.
-
-
-
-
-
-
-
-
-
-
-
-- After automatically starting bootloader, keyboard works again. 
-- If bootloader doesn’t start again, you have to start in manually. While pressing the key “Left ctlr”(in case of B.pad the key “0”), connect USB cable. Then bootloader will start again.
-
-
-4. How to set RGB LED
-Just select “Options > connect”
-
-
-
-
-
-- When you click “connect”, keyboard switch LEDs will be off.
-- When you click "disconnect", keyboard switch LEDs will be on and setting mode will be disconnected.
-- Num of LEDs : The amount of RGB LED in PCB 
-- LED mode selection and color setting : Choose LED mode and set Color.(you can use hexa code to define color you want. ex, FF3300)
-
-- Brightness : Can set the brightness of RGB LED by using slider. The brighter RGB LED, the darker switch LED.
-
-
-
-
-
-5. How to map keys
-
-1) Select “Key Mapper” tab
-
-2) If it’s the first time to map keys.
 
 2-1) Click the button labeled  "load keymap_part.hex or .json" and load basic Key mapping file included in the firmware.
 
@@ -132,6 +91,20 @@ If you want to enable the keyboard manually, just select “Options>set keyboard
 
 3-4) By selection “toggle bootmapper”, stop bootMapper.
 
+
+4. How to set RGB LED
+Just select “Options > connect”
+
+
+
+
+
+- When you click “connect”, keyboard switch LEDs will be off.
+- When you click "disconnect", keyboard switch LEDs will be on and setting mode will be disconnected.
+- Num of LEDs : The amount of RGB LED in PCB 
+- LED mode selection and color setting : Choose LED mode and set Color.(you can use hexa code to define color you want. ex, FF3300)
+
+- Brightness : Can set the brightness of RGB LED by using slider. The brighter RGB LED, the darker switch LED.
 
 
 
@@ -218,3 +191,27 @@ press “parse string >>” button, and then you can see all the keys splited.
 - Available texts 
 Normal Texts : `1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./
 Shift+Texts : ~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>?
+
+
+3. How to upload firmware
+
+Supporting both for Window and Mac OS
+Available only while connected by USB
+First of all you must upload firmware to enable all the functions properly.(When MCU was attached to the PCB by soldering, bootloader was automatically installed.)
+
+Start bootMapperClient.exe
+
+2) Select “Options > firm up(select hex file)” and select firmware file.
+
+
+
+
+
+
+
+
+
+
+
+- After automatically starting bootloader, keyboard works again. 
+- If bootloader doesn’t start again, you have to start in manually. While pressing the key “Left ctlr”(in case of B.pad the key “0”), connect USB cable. Then bootloader will start again.
