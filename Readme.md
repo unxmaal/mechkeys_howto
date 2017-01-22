@@ -1,6 +1,12 @@
 
 # Programming and setup for your MechKeys AVR-based board
 
+Every MechKeys.ca board ships pre-programmed and ready to use.
+
+To enhance the original layout, download the pre-programmed layout, modify it, and upload it to the board.
+
+In most cases, you will not need to upload new firmware to the board.
+
 ## tl;dr
 * Get the bootmapper client, firmware, and extract both
 * Plug your board in
