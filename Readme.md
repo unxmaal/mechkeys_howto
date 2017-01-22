@@ -85,92 +85,46 @@ Extract the ps2avrGB_firmware zip file.
 | Lock LED Settings | Specify lighting for "Num Lock", "Caps Lock", and "Scroll Lock" |
 
 
-
-
-
-6. Custom Macro 
-You can define maximum 12 Custom Macros.
+## Custom Macros 
+You can define a maximum of 12 Custom Macros.
 A macro can have up to 42 characters.
 
-1) Start bootMapper Client progrma
+### Macro overview
+1. Start the BootMapper Client
+1. Connect the board
+2. Click the "Custom Macro" tab
+3. Select the desired Custom Macro tab
+  1. E.g "CstMac1"  
+4. Enter the characters you want for your macro
+5. Click "Save macro.hex"
+6. Click Upload
 
-2) Select “Custom Macro” tab.
+### Combined Keys
+Example: Creating a macro for "ctrl+c"
 
+1. Click "LCtrl" on the keyboard diagram to add it to the Macro Builder section in the middle of the Custom Macros screen.
+2. Select the "LCtrl" in the Macro Builder section
+3. Click the "Split" button 
+4. This "splits" the macro into "LCtrl [down]" and "LCtrl [up]"
+5. "Down" means "when the key is pressed down", and "up" means "when the key is released"
+6. Select "LCtrl [down]"
+7. Click the "C" button on the keyboard diagram
+8. Save and upload
 
+### Macro delays
+1. Click the desired key
+2. Enter the duration (min: 0.1s; max 5s) 
+3. Click “Apply delay”
 
+### Text To Macro
+1. Enter the text to be used as a macro in the "String Parsing" text box 
+2. Click “Parse string >>” to automatically split the text and place it in the Macro Builder 
 
-
-3) You can see the display below
-Select CstMacX tab(CstMac stands for “Custom Macro”.) and enter Characters you want. 
-You can delete a selected character by pressing “remove” button.
-You can change order by dragging a character.
-
-
-
-
-4) Select “save macro.hex” to save Macro setting.
-When you upload this file to keyboard using bootloader.
-
-5) If you want to combine modifier keys as a macro, follow the instructions.(Example shows how to set “Ctrl+c” macro.)
-Add all the keys you want to use as a macro.
-
-
-
-
-
-- While LCtrl selected, press the “split” button.(or shift + mouse click)
-
-
-
-
-
-
-- You will see the splited LCtrl into down and up. 
-
-
-
-
-
-- Just drag anything to place “C” is in the middle between LCtrl(down) and LCtrl(up).
-
-
-
-
-
-
-
-
-
-6) You can set the delay for a macro.
-- Selecte the key you want.
-- Enter time(min 0.1 sec, max 5 secs) 
-- Press “apply delay” button
-
-
-
-
-
-
-
-
-
-7) Text To Macro
-The text entered can be translated into a macro
-
-- Enter the text you want to us as a macro in the text box "String Parsing" 
-
-
-
-press “parse string >>” button, and then you can see all the keys splited.
-
-
-
-
-- Available texts 
+#### Available texts 
 Normal Texts : `1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./
 Shift+Texts : ~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>?
 
-
+---------------------------
 3. How to upload firmware
 
 Supporting both for Window and Mac OS
