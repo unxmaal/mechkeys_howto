@@ -1,3 +1,17 @@
+
+# Programming and setup for your MechKeys AVR-based board
+
+## tl;dr
+* Get the bootmapper client, firmware, and extract both
+* Plug your board in
+* Run the bootmapper client
+* Transfer the current layout from the board to the bootmapper client
+* Pick the action you want in the "spreadsheet" list of available key actions
+* Click the key on the keyboard rendering at the bottom to map the action to the key
+* Rinse and repeat
+* Enable the "reboot after uploading" checkbox
+* Click upload
+
 bootMapperClient
 
 1) For Window
