@@ -140,6 +140,7 @@ NOTE: This is not required for the normal operation of a MechKeys keyboard.
 
 ### Firmware failure
 If the bootloader fails to start
+
 1. Press and hold the "Left CTRL" key (for the MechPad, press and hold the “0” key)
 2. Connect USB cable 
 3. Release the "Left CTRL" key
