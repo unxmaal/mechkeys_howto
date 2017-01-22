@@ -12,31 +12,30 @@
 * Enable the "reboot after uploading" checkbox
 * Click upload
 
-bootMapperClient
 
-1) For Window
- - Download : https://www.dropbox.com/s/3bn9flirkb49ahz/BootMapperClient.zip?dl=0
+## Downloads
+Download both the client and the firmware.
+
+### BootMapper Client
+Windows BootMapper Client: https://www.dropbox.com/s/3bn9flirkb49ahz/BootMapperClient.zip?dl=0
+Mac OSX BootMapper Client: https://www.dropbox.com/s/wselndg19ofby85/BootMapperClient.mac.zip?dl=0
+
+### Firmware
+PS2avrGB: https://github.com/showjean/ps2avrU/releases
+
+Select the file named "ps2avrGB_firmware_Vx.x.x_YYMMDD.zip"
+
+Do NOT select the file "ps2avrGB4U_firmware_Vx.x.x_YYMMDD.zip"
+
+### Extract the files
+
+Extract the BootMapper Client zip file.
+Extract the ps2avrGB_firmware zip file.
+
+#### Firmware files
 
 
-- Unzipping
-Download bootMapperClient.zip And unzip.
-After unzipping, you can see the directory like a picture below.
-
-
-
-
-
-2) For Mac
-- Download : https://www.dropbox.com/s/wselndg19ofby85/BootMapperClient.mac.zip?dl=0
-
-
-
-
-2. Downloading Firmware
-
-- Link : http://blog.winkeyless.kr/153
-
-Download ps2avrGB_firmware_Vx.x.x_YYMMDD.zip
+ 
 When unzipping 4 hex files appear.
 - ps2avrGB_NKRO.hex : Firmware
 - keymap_gb_B87(EX).hex : Key map for B.87, B.87 EX, B.mini, B.mini EX
