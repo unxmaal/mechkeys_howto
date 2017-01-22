@@ -93,7 +93,7 @@ A macro can have up to 42 characters.
 1. Start the BootMapper Client
 1. Connect the board
 2. Click the "Custom Macro" tab
-3. Select the desired Custom Macro tab
+3. Select the desired Custom Macro button
   1. E.g "CstMac1"  
 4. Enter the characters you want for your macro
 5. Click "Save macro.hex"
@@ -121,29 +121,26 @@ Example: Creating a macro for "ctrl+c"
 2. Click “Parse string >>” to automatically split the text and place it in the Macro Builder 
 
 #### Available texts 
+```
 Normal Texts : `1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./
 Shift+Texts : ~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>?
-
----------------------------
-3. How to upload firmware
-
-Supporting both for Window and Mac OS
-Available only while connected by USB
-First of all you must upload firmware to enable all the functions properly.(When MCU was attached to the PCB by soldering, bootloader was automatically installed.)
-
-Start bootMapperClient.exe
-
-2) Select “Options > firm up(select hex file)” and select firmware file.
+```
 
 
+## Uploading Firmware
 
+NOTE: This is not required for the normal operation of a MechKeys keyboard. 
 
+1. Start the BootMapper Client
+1. Connect the board
+1. Click the “Options" tab
+2. Click "Firm Up(select hex file)”
+3. Select firmware file.
+4. The keyboard will restart
 
-
-
-
-
-
-
-- After automatically starting bootloader, keyboard works again. 
-- If bootloader doesn’t start again, you have to start in manually. While pressing the key “Left ctlr”(in case of B.pad the key “0”), connect USB cable. Then bootloader will start again.
+### Firmware failure
+If the bootloader fails to start
+1. Press and hold the "Left CTRL" key (for the MechPad, press and hold the “0” key)
+2. Connect USB cable 
+3. Release the "Left CTRL" key
+4. The bootloader will start
